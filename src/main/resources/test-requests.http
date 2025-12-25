@@ -1,0 +1,27 @@
+### Получить всех водителей
+GET http://localhost:8080/api/drivers
+
+### Получить все машины
+GET http://localhost:8080/api/cars
+
+### Создать водителя
+POST http://localhost:8080/api/drivers
+Content-Type: application/json
+
+{
+  "name": "Иван Иванов",
+  "age": 30
+}
+
+### Создать машину
+POST http://localhost:8080/api/cars
+Content-Type: application/json
+
+{
+  "brand": "Toyota",
+  "model": "Camry",
+  "year": 2020
+}
+
+### Назначить водителя машине
+POST http://localhost:8080/api/cars/1/driver/1
